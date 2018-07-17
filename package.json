@@ -1,0 +1,35 @@
+{
+  "name": "@operator-error/pulumi-aws-instance-profile",
+  "version": "1.0.0",
+  "description": "IAM Instance Profile Component for Pulumi",
+  "author": "James Nugent",
+  "license": "MPL-2.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jen20/pulumi-aws-instance-profile.git"
+  },
+  "keywords": [
+    "pulumi",
+    "aws",
+    "instance profile"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prepare": "tsc -p ./ --outDir dist/"
+  },
+  "bugs": {
+    "url": "https://github.com/jen20/pulumi-aws-instance-profile/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "tslint": "^5.10.0",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^0.14.2"
+  }
+}
